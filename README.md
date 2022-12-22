@@ -193,7 +193,7 @@ I began to backtrack:
 Build is triggered automatically when developer updates code on Jenkins (Maven helps with code build) > Jenkins sends build artifacts to Ansible > Ansible builds playbooks - yml files > through  playbooks, Jenkins pushes NEW image and NEW container (overwriting any already existing image and container). But how can we use version control and what if we want multiple containers? —> Kubernetes 
 
 
-## 21: Setup Kubernetes (Bootstrap server) on Amazon EKS
+## Setup Kubernetes (Bootstrap server) on Amazon EKS
 - Launch EC2 instance with AWSCLI
 
 ![](images/S21.png)
@@ -209,7 +209,7 @@ Always refer back to official documentations; to download and setup environment 
 
 ![](images/S21.2.png)
 
-## 22: Create Manifest file
+## Create Manifest file
 - A Kubernetes manifest is a YAML file that describes each component or resource of your deployment and the state you want your cluster to be in once applied. 
 - Manifest is very similar to playbooks from Ansible and Dockerfile from docker 
 
@@ -217,30 +217,30 @@ Kubernetes POD and SERVICE
 - Pod is just a co-located group of container and an Kubernetes object. Instead of deploying them separate you can do deploy a pod of containers
 - A service is responsible for enabling network access to a set of pods.
 
-## 22.2: Instead of using Docker Hub, we can use Kubernetes for its redundancy it provides: Pods + service files
+## Instead of using Docker Hub, we can use Kubernetes for its redundancy it provides: Pods + service files
 - And now, Deployment file - another yaml file 
 
-## 23: *Use deployment and service files to create and access pod*
+## *Use deployment and service files to create and access pod*
 - Create deployment yaml file
 
 ![](images/S23.png)
 
 `[root@ip-172-31-23-55 ~]# kubectl describe service/anthonyortiz-service`
 
-## 23.2: Our PODS now have built-in redundancy 
+## Our PODS now have built-in redundancy 
 - I delete one pod, a new one is created.
 
 ![](images/S23.2.png)
 
-## 24: Integrate Kubernetes with Ansible
+##  Integrate Kubernetes with Ansible
 - Using hosts file I created, test the connection
 
 ![](images/S24.png)
 
-## 25: Create Ansible playbooks for deploy and service files
+##  Create Ansible playbooks for deploy and service files
 - instead of manually executing commands on Ansible server we can use Jenkins for automation.
 
-## 26: Create Jenkins deployment job for Kubernetes
+##  Create Jenkins deployment job for Kubernetes
 - Continues integration Jenkins job updates image to the latest version on docker hub - can be made public or private > then, continuous delivery Jenkins job uses latest image to update app to the latest version + redundancy. 
 
 ![](images/S26.png)
@@ -250,6 +250,6 @@ Kubernetes POD and SERVICE
 ![](images/.png)
 
 ## Closing thoughts
-- This project gave me hands-on EXPERIENCE with a real-world software production pipeline. I learned how the industry continuously integrates and delivers new software to end-user. I see SO much exciting opportunity where I see myself as a contributing member of the team. At the end of it, it’s demystifying the process that gets me excited because you learn not to be intimated by it. And you think to yourself, “I can 100% do this!” 
+- This project gave me hands-on EXPERIENCE with a real-world software production pipeline. I learned how the industry continuously integrates and delivers new software and updates to end-users. I see SO much exciting opportunity and see myself as a contributing member of the team. At the end of it, demystifying the software process gets me excited because I learn not to be intimated by it. And I think to myself, “I can 100% do this!” - it's about breaking down the process into manganable parts.
 
 
