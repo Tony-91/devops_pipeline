@@ -16,7 +16,7 @@
 ### What the heck is DevOps?
 - A consistent streamline and manageable pipeline for software development and delivery 
 - Continuous integration and continuous development and continuous testing
-- Development and operational teams working cohesively - no more silos!
+- Developmental and operational teams working cohesively - no more silos!
 
 ## Overview:
 There are two main parts to this project:
