@@ -245,4 +245,11 @@ Kubernetes POD and SERVICE
 
 ![](images/S26.png)
 
+## CD Summary
+
+![](images/.png)
+
+## Closing thoughts
+- This project gave me hands-on EXPERIENCE with a real-world software production pipeline. I learned how the industry continuously integrates and delivers new software to end-user. I see SO much exciting opportunity where I see myself as a contributing member of the team. At the end of it, it’s demystifying the process that gets me excited because you learn not to be intimated by it. And you think to yourself, “I can 100% do this!” 
+
 
