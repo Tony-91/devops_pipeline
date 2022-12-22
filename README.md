@@ -50,6 +50,17 @@ A lot of the steps involved setting up and configuring each piece of the environ
 
 ![](images/S9.png)
 
+> Docker File
+>1. FROM - to pull the base image
+>2. RUN - to execute commands 
+>3. CMD - to provide defaults for an executing container
+>4. ENTRYPOINT - to configure a container that will run as an executable 
+>5. WORKDIR - sets working directory
+>6. COPY - copy a directory from your local machine to the docker container
+>7. ADD - copy the files from local machine to docker containers
+>8. EXPOSE - informs docker what port a container is listening on 
+>9. ENV - set environment variables 
+
 ## Integrate Docker with Jenkins 
 - Create a dockeradmin user `useradd`
 - Install “Publish over SSH” plugin 
