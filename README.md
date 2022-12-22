@@ -35,7 +35,7 @@ There are two main parts to this project:
 ### Continuous Integration (CI)
 ![](images/OVERVIEW.png)
 
-We can edit and commit new changes on GitHub > after, we can run it through Jenkins (“Build Now” to create and push new artifacts - *we can automate this as well!*) and see live updates on the Tomcat server - Maven helps with error checks and simplifying source code. Jenkins and Maven work together to create a SOLID source code foundation to work on. 
+We can edit and commit new changes on GitHub > after, we can run it through Jenkins (“Build Now” to create and push new artifacts - *we can automate this as well!*) and see live updates on the Tomcat server > Maven helps with error checks and simplifying source code. Jenkins and Maven work together to create a SOLID source code foundation to work on. 
 
 ![](images/git2server.png)
 
