@@ -1,6 +1,6 @@
-![]()
-
 # FULL DevOps pipeline project | CI/CD | Jenkins | Ansible | Kubernetes 
+
+![](images/Devops.jpeg)
 
 ### Learning Objectives:
 1. DevOps
