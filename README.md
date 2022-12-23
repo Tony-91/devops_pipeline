@@ -82,8 +82,8 @@ A lot of the steps involved setting up and configuring each piece of the environ
 
 
 
-### Continuous Delivery (CD)
-##Ansible
+## Continuous Delivery (CD)
+### Ansible
 - Ansible is a suite of software tools that enables infrastructure as code. It can be used to provision the underlying infrastructure of your environment.
 - Jenkins sends artifacts over to Ansible > creates images and deploys containers. Ansible pushes images onto Docker Hub and deploys containers onto Docker.
 
