@@ -157,6 +157,9 @@ I began to backtrack:
 3. I checked docker hub and realized the image was not updating > I copied `docker push anthonyortiz/regapp:latest` and ran it in terminal, it resulting in an error, docker hub was still not updating. 
 4. I read the error message and it mentioned:
 `["errors:", "denied: requested access to the resource is denied", "unauthorized: authentication required"]`
+
+![](images/troubleshoot.png)
+
 5. I edited the play playbook to include *sudo* `sudo docker push anthonyortiz/regapp:latest` > SOLVED
 6. I was able to update image on docker hub and build project successfully executed on Jenkins
 
